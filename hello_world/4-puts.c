@@ -1,12 +1,14 @@
 # include <stdio.h>
-/* 
+/*
+ * main - prints something
  * This fuctions does something
  * probably
- * Enjoy :) 
+ * Enjoy :)
 */
 
 int main(void)
 {
+
 
 	puts("\"Programming is like building a multilingual puzzle");
 
