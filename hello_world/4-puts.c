@@ -1,13 +1,14 @@
 # include <stdio.h>
-/* This fuctions does something
+/* 
+ * This fuctions does something
  * probably
- * Enjoy :) */
+ * Enjoy :) 
+ * */
 
-int main(void) {
+int main(void) 
+{
 
 	puts("\"Programming is like building a multilingual puzzle");
 
 	return (0);
 }	
-
-
