@@ -1,8 +1,8 @@
 # include <stdio.h>
 /*
- * * main - prints something
- * This fuctions does something
- * probably
+ * main  entry point
+ *
+ * Return: Always 0 (Succeess)
  * Enjoy :)
 */
 
