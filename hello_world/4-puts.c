@@ -1,6 +1,6 @@
 # include <stdio.h>
 /*
- * main - prints something
+ * * main - prints something
  * This fuctions does something
  * probably
  * Enjoy :)
