@@ -19,7 +19,7 @@ int main(void)
 		
 	if (lDig > 5)
 		printf("%d and is greater than 5\n", lDig);
-	else if (lDig < 6 && lDig =! 0)
+	else if (lDig < 6 && lDig != 0)
 		printf("%d and is less than 6 and not 0\n", lDig);
 	else if (lDig == 0)
 		printf("%d and is 0\n", lDig);
