@@ -1,9 +1,10 @@
 # include <stdio.h>
 # include "main.h"
 /**
- * print_alphabet_x10 - guess it
+ * _islower - guess it
+ *@i: Character value
  *
- * Return: Always 0 (Succeess)
+ * Return:  0 if Succeess
 */
 
 int _islower(int i)
