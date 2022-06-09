@@ -16,11 +16,11 @@ void print_to_98(int i)
 	else
 		j = 1;
 
-	while ( i != 98 )
+	while (i != 98)
 	{
 		printf("%d, ", i);
 		i += j;
 	}
-	printf("%d\n",98);
+	printf("%d\n", 98);
 
 }
