@@ -23,12 +23,12 @@ void times_table(void)
 				while (ld >= 10)
 					ld = (ld / 10);
 				ld = ld + '0';
-			}	
+			}
 			else
 			{
 				fd = k + '0';
 				ld = ' ';
-	 		}
+			}
 			if (j != 0)
 			{
 			_putchar(' ');
