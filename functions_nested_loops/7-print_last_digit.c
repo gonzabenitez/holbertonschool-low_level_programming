@@ -10,7 +10,7 @@
 int print_last_digit(int i)
 {
 	if (i <= -2147483648)
-		i=8;
+		i = 8;
 	else
 	{
 		if (i < 0)
