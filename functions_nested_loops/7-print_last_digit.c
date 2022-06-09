@@ -9,7 +9,7 @@
 
 int print_last_digit(int i)
 {
-	if (i == INT_MIN)
+	if (i <= -2147483648)
 		i=8;
 	else
 	{
