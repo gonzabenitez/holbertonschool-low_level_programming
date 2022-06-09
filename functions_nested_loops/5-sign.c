@@ -1,7 +1,7 @@
 # include <stdio.h>
 # include "main.h"
 /**
- * _print_sign - guess it
+ * print_sign - guess it
  *@i: Character value
  *
  * Return:  0 if Succeess
@@ -17,7 +17,7 @@ int print_sign(int i)
 	else if (i < 0)
 	{
 		_putchar('-');
-		return (0);
+		return (-1);
 	}
 	else 
 	{
