@@ -7,21 +7,27 @@
 
 int main(void)
 {
-	char i;
+	char i, j;
 
 	for (i = 1 ; i <= 100 ; i++)
 	{
-		if ( !(i % 3) )
+		if (!(i % 3))
 		{
 			if (!(i % 5))
-				printf("FizzBuzz ");
-			else 
-				printf("Fizz ");
+				printf(" FizzBuzz");
+			else
+				printf(" Fizz");
 		}
-		else if ( !(i % 5) && i % 3)
-			printf("Buzz ");
+		else if (!(i % 5) && i % 3)
+			printf(" Buzz");
 		else
-			printf("%d ", i);
+			if (i > 1)
+				j = ' ';
+			else 
+				j = '';
+
+			printf("%c%d", j, i);
 	}
+	putchar('\n');
 	return (0);
 }
