@@ -19,7 +19,7 @@ void print_square(int i)
 	for (j = 0; j < i ; j++)
 	{
 		k = i;
-		for (; k >= 0 ; k--)
+		for (; k > 0 ; k--)
 			_putchar('#');
 		_putchar('\n');
 	}
