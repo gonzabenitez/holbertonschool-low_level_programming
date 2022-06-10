@@ -22,12 +22,11 @@ void print_triangle(int i)
 		l = j;
 		for (l = 0; l < k ; l++)
 		{
-			if ((j + l) >= (i - 1)) 
+			if ((j + l) >= (i - 1))
 				_putchar('#');
 			else
 				_putchar(' ');
 		}
 		_putchar('\n');
-		
 	}
 }
