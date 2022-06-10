@@ -1,12 +1,12 @@
 # include <stdio.h>
 # include "main.h"
 /**
- * print_most_numbers- guess it
+ * more_numbers- guess it
  *
  * Return:  0 if Succeess
 */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
 	char i, j;
 
