@@ -22,4 +22,5 @@ void print_line(int);
 void print_diagonal(int);
 void print_square(int);
 void _start(void);
+void print_triangle(int);
 # endif
