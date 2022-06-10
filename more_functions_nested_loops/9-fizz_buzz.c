@@ -5,7 +5,7 @@
  * Return:  0 if Succeess
 */
 
-void main(void)
+int main(void)
 {
 	char i;
 
@@ -24,4 +24,5 @@ void main(void)
 			printf("%d ", i);
 	}
 	printf("\n");
+	return (0);
 }
