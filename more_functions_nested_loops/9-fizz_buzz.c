@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	char i, j;
+	char i;
 
 	for (i = 1 ; i <= 100 ; i++)
 	{
@@ -23,11 +23,9 @@ int main(void)
 		else
 		{
 			if (i > 1)
-				j = ' ';
-			else 
-				j = '';
-
-			printf("%c%d", j, i);
+				printf(" %d", i);
+			else
+				printf("%d", i);
 		}
 	}
 	putchar('\n');
