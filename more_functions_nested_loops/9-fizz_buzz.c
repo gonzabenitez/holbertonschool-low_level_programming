@@ -1,12 +1,11 @@
 # include <stdio.h>
-# include "main.h"
 /**
  * start - guess it
  *
  * Return:  0 if Succeess
 */
 
-void _start(void)
+void main(void)
 {
 	char i;
 
