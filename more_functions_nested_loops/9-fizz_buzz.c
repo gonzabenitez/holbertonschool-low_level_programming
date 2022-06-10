@@ -1,13 +1,12 @@
 # include <stdio.h>
 # include "main.h"
 /**
- * fizz_buzz- guess it
- *@i: amount of times
+ * start - guess it
  *
  * Return:  0 if Succeess
 */
 
-void fizz_buzz(void)
+void _start(void)
 {
 	char i;
 
