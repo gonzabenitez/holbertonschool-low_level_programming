@@ -8,7 +8,9 @@
 
 void more_numbers(void)
 {
-	char i, j;
+	char i, j, k;
+	for (k = 0 ; k < 10 ; k++)
+	{
 
 	for (i = 0 ; i <= 14 ; i++)
 	{
@@ -18,7 +20,8 @@ void more_numbers(void)
 			j = (i % 10) + '0';
 			_putchar('1');
 		}
-		putchar(j);
+		_putchar(j);
 	}
 	_putchar('\n');
+	}
 }
