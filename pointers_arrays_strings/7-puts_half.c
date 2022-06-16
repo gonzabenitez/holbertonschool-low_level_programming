@@ -1,12 +1,12 @@
 # include "main.h"
 
 /**
- * rev_string - Something useful :)
+ * puts_half - Something useful :)
  *@s: string to be measured
  * Return: Always 0 (Succeess)
 */
 
-void rev_string(char *s)
+void puts_half(char *s)
 {
 	int i, j;
 	int len = _strlen(s);
