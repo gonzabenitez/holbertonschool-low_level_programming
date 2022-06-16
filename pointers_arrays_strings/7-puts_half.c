@@ -8,10 +8,9 @@
 
 void puts_half(char *s)
 {
-	int i, j;
+	int i;
 	int len = _strlen(s);
 
-	j = len - 1;
 	i = 0;
 	if (!(len % 2))
 		len /= 2;
