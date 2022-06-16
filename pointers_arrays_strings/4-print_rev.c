@@ -9,17 +9,17 @@
 void print_rev(char *s)
 {
 	int j;
-	int len = _strlen(s);
-	char r[len];
+	int len = _strlen(*s);
 
 	j = len;
 
 	while (j >= 0)
 	{
-		r[(len - j)] = s[j];
+		_putchar(s[j]);
 		j--;
 	}
 }
+
 /**
  * _strlen - returns len of a string
  * @s: string to be measured
