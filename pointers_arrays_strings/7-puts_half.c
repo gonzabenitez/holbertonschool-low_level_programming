@@ -9,12 +9,14 @@
 void puts_half(char *s)
 {
 	int i;
-	int len = _strlen(s) / 2;
+	int len = _strlen(s);
 
 	if (!(len % 2))
 		i = 0;
 	else
 		i = 1;
+
+	len /= 2;
 
 	while (len > i)
 	{
