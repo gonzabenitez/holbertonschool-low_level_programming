@@ -15,7 +15,7 @@ void puts_half(char *s)
 	if (!(len % 2))
 		len /= 2;
 	else
-		len = ((len - 1) / 2) + 1;
+		len /= 2;
 
 	while (len > i)
 	{
