@@ -22,7 +22,7 @@ int *_strncmp(char *dest, char *src)
 		if (lenS == lenD && lenS > 0)
 			n = lenS;
 		else
-			n = 0
+			n = 0;
 	diff = n;
 
 	for (i = 0; i < n; i++)
