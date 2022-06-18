@@ -1,5 +1,5 @@
 # include "main.h"
-
+# include <stddef.h>
 /**
  * _strchr - Something useful :)
  *@s: string to be measured
