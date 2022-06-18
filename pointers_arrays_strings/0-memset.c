@@ -4,7 +4,7 @@
  * _memset - Something useful :)
  *@s: string to be measured
  *@b: source string
- *@n: int 
+ *@n: int
  * Return: Always 0 (Succeess)
 */
 
