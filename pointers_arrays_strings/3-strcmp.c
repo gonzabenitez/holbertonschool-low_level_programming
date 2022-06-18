@@ -1,13 +1,13 @@
 # include "main.h"
 
 /**
- * _strncmp - Something useful :)
+ * _strcmp - Something useful :)
  *@dest: string to be measured
  *@src: source string
  * Return: Always 0 (Succeess)
 */
 
-int _strncmp(char *dest, char *src)
+int _strcmp(char *dest, char *src)
 {
 	int i, n;
 	int diff;
