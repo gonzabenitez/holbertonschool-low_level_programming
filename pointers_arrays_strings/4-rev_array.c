@@ -1,13 +1,13 @@
 # include "main.h"
 
 /**
- * rev_array - Something useful :)
+ * reverse_array - Something useful :)
  *@a: string to be measured
  *@n: int 
  * Return: Always 0 (Succeess)
 */
 
-void rev_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int i, f, l;
 
