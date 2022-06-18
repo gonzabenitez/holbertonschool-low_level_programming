@@ -20,7 +20,7 @@ char *leet(char *dest)
 			j = k + '0';
 
 			if (dest[i] == sep[k] || dest[i] == sep[k] + 32)
-				dest[k] = j;
+				dest[i] = j;
 		}
 		i++;
 	}
