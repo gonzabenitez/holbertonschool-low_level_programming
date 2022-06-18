@@ -24,7 +24,10 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 			else
+			{
 				b=0;
+				break;
+			}
 		}
 		i++;
 	}
