@@ -13,7 +13,7 @@ void print_diagsums(int *a, int size)
 	int i, j, k;
 
 	j = 0;
-	i = 0;
+	i = 1;
 	k = 0;
 
 	while (i <= size)
