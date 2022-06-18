@@ -14,7 +14,10 @@ char *_strncat(char *dest, char *src, int n)
 	int lenS = _strlen(src);
 	int lenD = _strlen(dest);
 
-	lenS++;
+	if (lenS == 0 && lenD == 0)
+		n = 0;
+	else
+		lenS++;
 
 	for (i = 0; i < n; i++)
 	{
