@@ -9,10 +9,10 @@
 char *leet(char *dest)
 {
 	int i, j, k;
-	int lenD = _strlen(dest);
 	char sep[] = {'O', 'L', '~', 'E', 'A', '~', '~', 'T'};
 
-	for (i = 0; i < lenD; i++)
+	i = 0;
+	while(dest[i] != '\0')
 	{
 
 		for (k = 7; k >= 0; k--)
@@ -22,21 +22,7 @@ char *leet(char *dest)
 			if (dest[i] == sep[k] || dest[i] == sep[k] + 32)
 				dest[k] = j;
 		}
+		i++;
 	}
 	return (dest);
-}
-
-/**
- * _strlen - returns len of a string
- * @s: string to be measured
- * Return: length of string
-*/
-
-int _strlen(char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-		i++;
-	return (i);
 }
