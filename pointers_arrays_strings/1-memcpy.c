@@ -11,8 +11,8 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
-	int lenS = _strlen(src);
-	int lenD = _strlen(dest);
+	unsigned int lenS = _strlen(src);
+	unsigned int lenD = _strlen(dest);
 
 	if (lenS == 0 && lenD == 0)
 		n = 0;
@@ -35,9 +35,9 @@ char *_memcpy(char *dest, char *src, unsigned int n)
  * Return: length of string
 */
 
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
-	int i = 0;
+	unsigned int i = 0;
 
 	while (s[i] != '\0')
 		i++;
