@@ -37,7 +37,7 @@ char *_strstr(char *s, char *accept)
 		}
 		if (k == j)
 		{
-			p = &s[i - k];
+			p = &s[i];
 			break;
 		}
 		i++;
