@@ -13,8 +13,9 @@ void print_diagsums(int *a, int size)
 	int i, j, k;
 
 	j = 0;
-	i = 1;
+	i = 0;
 	k = 0;
+	size--;
 
 	while (i <= size)
 	{
