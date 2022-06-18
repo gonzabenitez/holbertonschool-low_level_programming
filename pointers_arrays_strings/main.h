@@ -22,4 +22,5 @@ char *leet(char *);
 unsigned int _strlenA(char *);
 char *_memset(char *, char, unsigned int);
 char *_memcpy(char *, char *, unsigned int);
+char *_strchr(char *, char);
 # endif
