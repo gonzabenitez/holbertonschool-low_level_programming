@@ -7,7 +7,7 @@
  * Return: Always 0 (Succeess)
 */
 
-int *_strncmp(char *dest, char *src)
+int _strncmp(char *dest, char *src)
 {
 	int i, n;
 	int diff;
