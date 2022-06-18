@@ -11,16 +11,17 @@ char *_strchr(char *s, char c)
 {
 	unsigned int i;
 	unsigned int lenS = _strlenA(s);
+	char *p;
 
 	for (i = 0; i < lenS; i++)
 	{
 		if (s[i] == c)
 			break;
+		else
+			p = NULL;
 	}
-	if (s[i] == c)
-		return (s[i]);
-	else
-		return (NULL);
+
+	return(p);
 }
 
 /**
