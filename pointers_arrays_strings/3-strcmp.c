@@ -28,7 +28,7 @@ int _strcmp(char *dest, char *src)
 	for (i = 0; i < n; i++)
 	{
 		diff = dest[i] - src[i];
-		if (! diff)
+		if (!diff)
 			continue;
 		else
 			break;
