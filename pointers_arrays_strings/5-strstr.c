@@ -2,13 +2,13 @@
 # include <stdio.h>
 
 /**
- * _strpbrk - Something useful :)
+ * _strstr - Something useful :)
  *@s: string to be measured
  *@accept: who knows
  * Return: Always 0 (Succeess)
 */
 
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *s, char *accept)
 {
 	unsigned int i, k, j;
 	char *p;
