@@ -10,7 +10,7 @@
 int *_strncmp(char *dest, char *src)
 {
 	int i, n;
-	char diff;
+	int diff;
 	int lenS = _strlen(src);
 	int lenD = _strlen(dest);
 
