@@ -12,10 +12,10 @@ char *leet(char *dest)
 	char sep[] = {'O', 'L', '~', 'E', 'A', '~', '~', 'T'};
 
 	i = 0;
-	while(dest[i] != '\0')
+	while (dest[i] != '\0')
 	{
 
-		for (k = 7; k >= 0; k--)
+		for (k = 0; k < 8; k++)
 		{
 			j = k + '0';
 
