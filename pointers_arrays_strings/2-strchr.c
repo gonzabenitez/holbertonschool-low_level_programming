@@ -13,13 +13,28 @@ char *_strchr(char *s, char c)
 	unsigned int lenS = _strlenA(s);
 	char *p;
 
+	pointnull(&p);
+
 	for (i = 0; i < lenS; i++)
 	{
 		if (s[i] == c)
+		{
+			p = s[i];
 			break;
+		}
 	}
 
 	return(p);
+}
+/**
+ * pointnull - claim your prize if you guess it ;)
+ * @p: ponter to be pointed to null
+ * Return: void
+*/
+
+void pointnull(char **p)
+{
+	*p = NULL;
 }
 
 /**
