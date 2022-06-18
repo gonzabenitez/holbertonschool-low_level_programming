@@ -15,9 +15,13 @@ char *cap_string(char *dest)
 	for (i = 0; i < lenD; i++)
 	{
 		j = i + 1;
+
+		if (i == 0 && dest[0] >= 'a' && dest[0] <= 'z')
+			dest[0] -= 32;
+
 		for (k = 12; k >= 0; k--)
 		{
-			if ((dest[i] == sep[k] || i == 0) && dest[j] >= 'a' && dest [j] <= 'z')
+			if ((dest[i] == sep[k]) && dest[j] >= 'a' && dest[j] <= 'z')
 				dest[j] -= 32;
 		}
 	}
