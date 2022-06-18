@@ -18,8 +18,8 @@ void rev_array(int *a, int n)
 		f = a[i];
 		l = a[n];
 
-		s[n] = f;
-		s[i] = l;
+		a[n] = f;
+		a[i] = l;
 
 		n--;
 		i++;
