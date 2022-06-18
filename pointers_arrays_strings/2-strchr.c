@@ -15,10 +15,7 @@ char *_strchr(char *s, char c)
 
 	pointnull(&p);
 
-	if (c == '\0')
-		lenS = 0;
-
-	for (i = 0; i < lenS; i++)
+	for (i = 0; i <= lenS; i++)
 	{
 		if (s[i] == c)
 		{
