@@ -15,14 +15,14 @@ void print_diagsums(int *a, int size)
 	i = 0;
 	k = 0;
 
-	while (i =< size)
+	while (i <= size)
 	{
-		j += a[i][i];
+		j += *a[i][i];
 		i++;
 	}
 	while (i >= 0)
 	{
-		k += a[size - i][i];
+		k += *a[size - i][i];
 		i--;
 	}
 	printf("%d, %d\n", j, k);
