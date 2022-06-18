@@ -1,5 +1,5 @@
 # include "main.h"
-# include <stddef.h>
+# include <stdio.h>
 /**
  * _strchr - Something useful :)
  *@s: string to be measured
@@ -24,7 +24,7 @@ char *_strchr(char *s, char c)
 		}
 	}
 
-	return(p);
+	return (p);
 }
 /**
  * pointnull - claim your prize if you guess it ;)
