@@ -30,7 +30,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 }
 
 /**
- * _strlen - returns len of a string
+ * _strlenA - returns len of a string
  * @s: string to be measured
  * Return: length of string
 */
