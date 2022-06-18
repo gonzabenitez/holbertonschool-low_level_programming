@@ -3,7 +3,7 @@
 /**
  * reverse_array - Something useful :)
  *@a: string to be measured
- *@n: int 
+ *@n: int
  * Return: Always 0 (Succeess)
 */
 
@@ -13,15 +13,16 @@ void reverse_array(int *a, int n)
 
 	i = 0;
 
-	while (n >= i)
+	while (n > i)
 	{
+		n--;
+
 		f = a[i];
 		l = a[n];
 
 		a[n] = f;
 		a[i] = l;
 
-		n--;
 		i++;
 	}
 
