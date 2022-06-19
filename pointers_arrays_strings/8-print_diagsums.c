@@ -23,10 +23,10 @@ void print_diagsums(int *a, int size)
 		i++;
 		t += size + 1;
 	}
-	t -= (size - 1)
+	t -= (size - 1);
 	while (i > 0)
 	{
-		k = *(a + t);
+		k += *(a + t);
 		t -= (size - 1);
 		i--;
 	}
