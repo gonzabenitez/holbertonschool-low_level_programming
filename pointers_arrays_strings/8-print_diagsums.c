@@ -27,8 +27,9 @@ void print_diagsums(int *a, int size)
 	while (i > 0)
 	{
 		k += *(a + t);
-		t -= (size - 1);
 		i--;
+		printf("siendo t :%d (a+t)=%d con i: %d\n", t, *(a + t), i);
+		t -= (size -1);
 	}
 	printf("%d, %d\n", j, k);
 }
