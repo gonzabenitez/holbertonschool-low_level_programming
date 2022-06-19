@@ -25,12 +25,11 @@ void print_diagsums(int *a, int size)
 	}
 	t--;
 	t -= (2 * (size - 1));
-	printf(" %d valor de t antes del bucle descendente", t);
+	t--;
 	while (i > 0)
 	{	
 		k += *(a + t);
 		t -= (size -1);
-		printf("fin de bucle t: %d, valor de lugar = %d, i:%d", t, *(a + t), i);
 		i--;
 	}
 	printf("%d, %d\n", j, k);
