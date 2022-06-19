@@ -10,21 +10,25 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, j, k;
+	int i, j, k, t;
 
 	j = 0;
 	i = 0;
 	k = 0;
+	t = 0;
 	size--;
 
 	while (i <= size)
 	{
-		j += ((a + i)[i]);
+		t = ((a + i)[i]);
+		printf("en %d: %d = %d", i, i, t);
+		j = j + t;
 		i++;
 	}
 	while (i >= 0)
 	{
-		k += ((a + (size - i))[i]);
+		t = ((a + (size - i))[i]);
+		printf("en %d: %d = %d",(size - i), i, t);
 		i--;
 	}
 	printf("%d, %d\n", j, k);
