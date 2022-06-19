@@ -23,12 +23,12 @@ void print_diagsums(int *a, int size)
 		i++;
 		t += size + 1;
 	}
-	t -= (size - 1);
+	t--;
+	t -= (2 * (size - 1));
 	while (i > 0)
 	{
 		k += *(a + t);
 		i--;
-		printf("siendo t :%d (a+t)=%d con i: %d\n", t, *(a + t), i);
 		t -= (size -1);
 	}
 	printf("%d, %d\n", j, k);
