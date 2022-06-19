@@ -16,19 +16,19 @@ void print_diagsums(int *a, int size)
 	i = 0;
 	k = 0;
 	t = 0;
-	size--;
 
 	while (i <= size)
 	{
 		t = ((a + i)[i]);
-		printf("en %d: %d = %d", i, i, t);
+		printf("en %d: %d = %d \n", i, i, t);
 		j = j + t;
 		i++;
 	}
 	while (i >= 0)
 	{
 		t = ((a + (size - i))[i]);
-		printf("en %d: %d = %d",(size - i), i, t);
+		printf("en %d: %d = %d \n",(size - i), i, t);
+		k = k + t;
 		i--;
 	}
 	printf("%d, %d\n", j, k);
