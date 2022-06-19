@@ -19,9 +19,9 @@ void print_diagsums(int *a, int size)
 
 	while (i < size)
 	{	
-		j = (a + t);
+		j = *(a + t);
 		printf("a + %d e i : %d = %d \n", t, i, j);
-		t += size + i
+		t += size + i;
 		i++;
 	}
 	while (i >= 0)
