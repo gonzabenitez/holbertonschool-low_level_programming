@@ -21,8 +21,8 @@ void print_diagsums(int *a, int size)
 	{	
 		j = *(a + t);
 		printf("a + %d e i : %d = %d \n", t, i, j);
-		t += size + i;
 		i++;
+		t += size + 1;
 	}
 	while (i >= 0)
 	{
