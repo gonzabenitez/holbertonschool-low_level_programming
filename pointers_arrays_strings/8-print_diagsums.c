@@ -17,16 +17,16 @@ void print_diagsums(int *a, int size)
 	k = 0;
 	t = 0;
 
-	while (i <= size)
+	while (i < size)
 	{
-		t = ((a + i)[i]);
+		t = (*(a + i)[i]);
 		printf("en %d: %d = %d \n", i, i, t);
 		j = j + t;
 		i++;
 	}
 	while (i >= 0)
 	{
-		t = ((a + (size - i))[i]);
+		t = (*(a + (size - i))[i]);
 		printf("en %d: %d = %d \n",(size - i), i, t);
 		k = k + t;
 		i--;
