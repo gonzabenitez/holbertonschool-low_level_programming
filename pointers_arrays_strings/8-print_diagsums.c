@@ -18,10 +18,10 @@ void print_diagsums(int *a, int size)
 	t = 0;
 
 	while (i < size)
-	{
-		t = ((a + i)[i]);
-		printf("en %d: %d = %d \n", i, i, t);
-		j = j + t;
+	{	
+		j = (a + t);
+		printf("a + %d e i : %d = %d \n", t, i, j);
+		t += size + i
 		i++;
 	}
 	while (i >= 0)
