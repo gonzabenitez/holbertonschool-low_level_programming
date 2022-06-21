@@ -24,7 +24,8 @@ int _strlen_recursion(char *s)
 
 void _pstrlen(char *s, int *p)
 {
-	int n = *p
+	int n = *p;
+
 	if (s[n] != '\0')
 	{
 		n++;
