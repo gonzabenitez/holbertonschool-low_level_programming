@@ -40,7 +40,7 @@ void prime_minister(int *p, int n)
 
 	if ((*p % n != 0) && (2 * n < *p))
 	{
-		_sqrtr(p, n);
+		prime_minister(p, n);
 	}
 	else if (*p % n == 0)
 		*p = n;
