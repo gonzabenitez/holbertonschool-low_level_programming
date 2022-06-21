@@ -16,13 +16,13 @@ int _strlen_recursion(char *s)
 }
 
 /**
- * _vstrlen - returns len of a string
+ * _pstrlen - returns len of a string
  * @s: string to be measured
  * @n: number
  * Return: length of string
 */
 
-void _vstrlen(char *s, int *p)
+void _pstrlen(char *s, int *p)
 {
 	if (s[*p] != '\0')
 	{
