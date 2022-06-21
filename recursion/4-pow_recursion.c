@@ -9,6 +9,7 @@
 
 int _pow_recursion(int x, int y)
 {
+
 	int *p;
 	int *pn;
 	int a, b;
@@ -32,7 +33,7 @@ int _pow_recursion(int x, int y)
 /**
  * _facpn - returns len of a string
  * @n: string to be measured
- * @p: number
+ * @p: number add this to test if git will push
  * Return: length of string
 */
 
