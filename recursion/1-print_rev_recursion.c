@@ -8,11 +8,7 @@
 
 void _print_rev_recursion(char *s)
 {
-	int i;
-	
-	i = _strlen(s, 0);
-	i--;
-	_put_n(s, i);			
+	_vstrlen(s, 0);			
 	_putchar('\n');
 	return;
 }
@@ -37,19 +33,22 @@ void _put_n(char *s, int n)
 }
 
 /**
- * _strlen - returns len of a string
+ * _vstrlen - returns len of a string
  * @s: string to be measured
  * @n: number
  * Return: length of string
 */
 
-int _strlen(char *s, int n)
+void _vstrlen(char *s, int n)
 {
 	if (s[n] != '\0')
 	{
 		n++;
-		_strlen(s, n);
+		_vstrlen(s, n);
 	}
 	else
-		return (n);
+	{
+		_put_n(s, n);
+		return;
+	}
 }
