@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 {
 	long a = 0;
 	int i;
+	char *p;
 
 	if (argc < 2)
 	{
@@ -20,9 +21,8 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		errno = 0;
-		a += strtol(argv[i], NULL, 10);
-		if (errno != 0)
+		a += strtol(argv[i], &p, 10);
+		if (p != '\0')
 		{
 			printf("Error\n");
 			return (1);
