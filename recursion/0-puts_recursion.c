@@ -34,6 +34,5 @@ int _strlen(char *s, int n)
 		n++;
 		_strlen(s, n);
 	}
-	else
-		return (n);
+	return (n);
 }
