@@ -26,8 +26,8 @@ int factorial(int n)
 }
 
 /**
- * _pstrlen - returns len of a string
- * @s: string to be measured
+ * _facpn - returns len of a string
+ * @n: string to be measured
  * @p: number
  * Return: length of string
 */
@@ -38,7 +38,7 @@ void _facpn(int *n, int *p)
 	if (*n > 0)
 	{
 		*p = (*p) * (*n);
-		n--;
+		*n = *n - 1;
 		_facpn(n, p);
 	}
 	else
