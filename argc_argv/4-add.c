@@ -12,7 +12,10 @@ int main(int argc, char *argv[])
 {
 	long a = 0;
 	int i;
+	char f = '\0';
 	char *p;
+
+	p = &f;
 
 	if (argc < 2)
 	{
@@ -22,7 +25,7 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		a += strtol(argv[i], &p, 10);
-		if (p != '\0')
+		if (*p != '\0')
 		{
 			printf("Error\n");
 			return (1);
