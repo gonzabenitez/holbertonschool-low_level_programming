@@ -10,6 +10,7 @@ int _strlen_recursion(char *s)
 {
 	int i=0;
 	int *p;
+
 	p = &i;
 	_pstrlen(s, p);
 	return (i);
@@ -29,7 +30,8 @@ void _pstrlen(char *s, int *p)
 	if (s[n] != '\0')
 	{
 		n++;
-		_pstrlen(s, n);
+		*p = n;
+		_pstrlen(s, p);
 	}
 	else
 	{
