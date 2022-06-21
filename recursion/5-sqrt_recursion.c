@@ -36,7 +36,7 @@ int _sqrt_recursion(int n)
 void _sqrtr(int *p, int n)
 {
 
-	*n = *n + 1;
+	n = n + 1;
 
 	if ((n * n) < *p)
 	{
