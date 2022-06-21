@@ -1,5 +1,6 @@
 # include <stdio.h>
 # include <stdlib.h>
+# include <errno.h>
 /**
  * main - Something useful :)
  *@argc: string to be measured
@@ -10,11 +11,11 @@
 int main(int argc, char *argv[])
 {
 	long a = 0;
-	int i, errno;
+	int i;
 
 	if (argc < 2)
 	{
-		printf("0");
+		printf("0\n");
 		return (0);
 	}
 	for (i = 1; i < argc; i++)
