@@ -46,6 +46,7 @@ void _vstrlen(char *s, int n)
 	}
 	else
 	{
+		n--;
 		_put_n(s, n);
 		return;
 	}
