@@ -39,8 +39,8 @@ void _facpn(int *n, int *p)
 
 	if (*n > 0)
 	{
-		*p = (*p) * (*n);
 		*n = *n - 1;
+		*p = (*p) * (*n);
 		_facpn(n, p);
 	}
 	else
