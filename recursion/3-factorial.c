@@ -11,7 +11,7 @@ int factorial(int n)
 	int i;
 	int *p;
 	int *pn;
-	
+
 	i = n;
 
 	if (n < 0)
