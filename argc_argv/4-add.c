@@ -17,10 +17,10 @@ int main(int argc, char *argv[])
 		printf("0");
 		return (0);
 	}
-	for (i = 1; i <= argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		errno = 0;
-		a += strtol(argv[1], NULL, 10);
+		a += strtol(argv[i], NULL, 10);
 		if (errno != 0)
 		{
 			printf("Error\n");
