@@ -24,15 +24,16 @@ int _strlen_recursion(char *s)
 
 void _pstrlen(char *s, int *p)
 {
-	if (s[p] != '\0')
+	int n = *p
+	if (s[n] != '\0')
 	{
-		p++;
-		_pstrlen(s, p);
+		n++;
+		_pstrlen(s, n);
 	}
 	else
 	{
-		p--;
-		*p = p;
+		n--;
+		*p = n;
 		return;
 	}
 }
