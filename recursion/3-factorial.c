@@ -2,7 +2,7 @@
 # include <stdio.h>
 /**
  * factorial - Something useful :)
- *@s: string to be measured
+ *@n: string to be measured
  * Return: Always 0 (Succeess)
 */
 
@@ -11,6 +11,8 @@ int factorial(int n)
 	int i;
 	int *p;
 	int *pn;
+	
+	i = 0;
 
 	if (n < 0)
 		i = -1;
