@@ -11,19 +11,22 @@ int _pow_recursion(int x, int y)
 {
 	int *p;
 	int *pn;
+	int a, b;
 
+	a = x;
+	b = y;
 
-	if (y < 0)
-		x = -1;
-	else if (y == 0)
-		x = 1;
+	if (b < 0)
+		a = -1;
+	else if (b == 0)
+		a = 1;
 	else
 	{
-		p = &x;
-		pn = &y;
+		p = &a;
+		pn = &b;
 		_facpn(pn, p);
 	}
-	return (x);
+	return (a);
 }
 
 /**
