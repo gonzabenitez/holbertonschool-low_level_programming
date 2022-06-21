@@ -24,7 +24,7 @@ void _puts_recursion(char *s)
 /**
  * _strlen - returns len of a string
  * @s: string to be measured
- * @n: number 
+ * @n: number
  * Return: length of string
 */
 
