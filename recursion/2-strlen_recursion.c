@@ -31,8 +31,7 @@ void _pstrlen(char *s, int *p)
 	}
 	else
 	{
-		n--;
-		*p = n;
+		*p--;
 		return;
 	}
 }
