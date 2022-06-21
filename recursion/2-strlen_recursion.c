@@ -8,7 +8,7 @@
 
 int _strlen_recursion(char *s)
 {
-	int i=0;
+	int i = 0;
 	int *p;
 
 	p = &i;
@@ -19,7 +19,7 @@ int _strlen_recursion(char *s)
 /**
  * _pstrlen - returns len of a string
  * @s: string to be measured
- * @n: number
+ * @p: number
  * Return: length of string
 */
 
@@ -35,7 +35,6 @@ void _pstrlen(char *s, int *p)
 	}
 	else
 	{
-		n--;
 		*p = n;
 		return;
 	}
