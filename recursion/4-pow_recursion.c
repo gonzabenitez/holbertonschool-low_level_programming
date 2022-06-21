@@ -12,10 +12,12 @@ int _pow_recursion(int x, int y)
 
 	int *p;
 	int *pn;
-	int a, b;
+	int *fck;
+	int a, b, c;
 
 	a = x;
 	b = y;
+	c = x;
 
 	if (b < 0)
 		a = -1;
@@ -23,28 +25,33 @@ int _pow_recursion(int x, int y)
 		a = 1;
 	else
 	{
+
 		p = &a;
 		pn = &b;
-		_facpn(pn, p);
+		fck = &c;
+		_tfacpn(pn, p, fck);
 	}
 	return (a);
 }
 
 /**
- * _facpn - returns len of a string
+ * _tfacpn - returns len of a string
  * @n: string to be measured
  * @p: number add this to test if git will push
+ * @fck: wtf
  * Return: length of string
 */
 
-void _facpn(int *n, int *p)
+void _tfacpn(int *n, int *p, int *fck)
 {
+
 	*n = *n - 1;
 
-	if (*n > 1)
+	if (*n > 0)
 	{
-		*p = (*p) * (*p);
-		_facpn(n, p);
+		*p *= (*fck);
+
+		_tfacpn(n, p, fck);
 	}
 	else
 	{
