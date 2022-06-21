@@ -36,10 +36,10 @@ int factorial(int n)
 
 void _facpn(int *n, int *p)
 {
+	*n = *n - 1;
 
 	if (*n > 0)
 	{
-		*n = *n - 1;
 		*p = (*p) * (*n);
 		_facpn(n, p);
 	}
