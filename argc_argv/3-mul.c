@@ -1,5 +1,5 @@
 # include <stdio.h>
-
+# include <stdlib.h>
 /**
  * main - Something useful :)
  *@argc: string to be measured
@@ -9,17 +9,17 @@
 
 int main(int argc, char *argv[])
 {
-	int a, b;
+	long a, b;
 
-	if (argc < 2)
+	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else	
 	{
-		a = *argv[1] - 48;
-		b = *argv[2] - 48;
+		a = strtol(argv[1]);
+		b = strtol(argv[2]);
 		printf("%d\n", a * b);	
 		return (0);
 	}
