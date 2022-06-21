@@ -12,7 +12,7 @@ int factorial(int n)
 	int *p;
 	int *pn;
 	
-	i = 0;
+	i = n;
 
 	if (n < 0)
 		i = -1;
