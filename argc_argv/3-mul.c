@@ -18,9 +18,9 @@ int main(int argc, char *argv[])
 	}
 	else	
 	{
-		a = argv[1] - 48;
-		b = argv[2] - 48;
-		printf("%d\n", a * b)	
+		a = *argv[1] - 48;
+		b = *argv[2] - 48;
+		printf("%d\n", a * b);	
 		return (0);
 	}
 }
