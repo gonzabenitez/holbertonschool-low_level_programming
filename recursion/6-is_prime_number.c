@@ -43,10 +43,10 @@ void prime_minister(int *p, int n)
 		prime_minister(p, n);
 	}
 	else if (*p % n == 0)
-		*p = n;
+		*p = 0;
 	else
 	{
-		*p = 0;
+		*p = 1;
 		return;
 	}
 }
