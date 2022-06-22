@@ -1,0 +1,27 @@
+#!/usr/bin/bash
+touch "gacp.log"
+if git add "$1" > gacp.log 
+	then
+	A="OK"
+	else
+	A="ERR $?"
+fi
+if git commit -m "$2" >> gacp.log
+	then
+	C="OK"
+	else
+	C="ERR $?"
+fi
+if git push >> gacp.log 2>&1
+	then
+	P="OK"
+else
+	p="ERR $?"
+fi
+
+echo "Result A: $A, C: $C, P: $P"
+if [ $3 == 'c' ];
+then
+	clear
+fi
+
