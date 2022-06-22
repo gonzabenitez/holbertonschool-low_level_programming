@@ -12,7 +12,7 @@ int print_last_digit(int);
 void jack_bauer(void);
 void times_table(void);
 int _isupper(int);
-int atoi(char *);
+int _atoi(char *);
 int _isdigit(int);
 int mul(int, int);
 void print_numbers(void);
