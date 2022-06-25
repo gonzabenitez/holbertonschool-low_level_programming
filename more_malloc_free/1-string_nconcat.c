@@ -15,11 +15,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *dest;
 
 	if (s1 != NULL)
-		s =(int) _strlen(s1) + 1;
+		s = _ustrlen(s1) + 1;
 	else
 		s = 0;
 	if (s2 != NULL)
-		t =(int) _strlen(s2);
+		t = _ustrlen(s2);
 	else
 		t = 0;
 	if (s + t == 0)
@@ -55,7 +55,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
  * Return: length of string
 */
 
-int _strlen(char *s)
+unsigned int _ustrlen(char *s)
 {
 	int i = 0;
 
