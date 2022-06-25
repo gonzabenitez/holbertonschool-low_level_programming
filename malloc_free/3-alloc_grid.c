@@ -23,7 +23,7 @@ int **alloc_grid(int w, int h)
 			for (i = 0; i < h; i++)
 			{	
 				for (s = 0; s < w; s++)
-					dest + (i * w + s) = 0;
+					dest[w][h] = 0;
 			}
 		}
 	}
