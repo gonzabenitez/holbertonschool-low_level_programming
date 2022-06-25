@@ -2,5 +2,5 @@
 # define MAIN_H
 int _putchar(char);
 int _strlen(char *, int);
-char *create_array(int, char);
+char *create_array(unsigned int, char);
 # endif
