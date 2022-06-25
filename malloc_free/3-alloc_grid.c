@@ -32,6 +32,7 @@ int **alloc_grid(int w, int h)
 				{
 					for (t = i - 1; t >= 0; t--)
 						free(dest[t]);
+					free(dest);
 					break;
 				}
 
