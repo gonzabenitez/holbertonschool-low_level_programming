@@ -1,5 +1,6 @@
 # include "main.h"
 # include <stdlib.h>
+# include <stdio.h>
 
 /**
  * string_nconcat - Something useful :)
@@ -11,17 +12,19 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, s, t;
+	unsigned int i, s, t, r;
 	char *dest;
-
+	
 	if (s1 != NULL)
-		s = _ustrlen(s1) + 1;
+		s = _ustrlen(s1);
 	else
 		s = 0;
+
 	if (s2 != NULL)
 		t = _ustrlen(s2);
 	else
 		t = 0;
+
 	if (s + t == 0)
 	{
 		dest = malloc(1);
@@ -33,15 +36,23 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		if (n >= t)
 			n = t;
 	}
-
-	dest = malloc(s + n);
+	
+	r = s + n;
+	dest = malloc(r);
 
 	if (dest != NULL)
 	{
-		for (i = 0; i < s; i++)
-			dest[i] = s1[i];
-		for (i = 0; i < n; i++)
-			dest[i + s] = s2[i];
+		for (i = 0; i < r; i++)
+		{
+			if (i < s)
+			{
+				dest[i] = s1[i];
+			}
+			else
+			{
+				dest[i] = s2[i - s];
+			}
+		}
 		dest[n + s] = '\0';
 	}
 
