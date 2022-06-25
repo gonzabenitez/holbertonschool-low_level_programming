@@ -2,6 +2,7 @@
 # define MAIN_H
 int _putchar(char);
 int _strlen(char *);
+unsigned int _ustrlen(char *);
 char *create_array(unsigned int, char);
 char *_strdup(char *str);
 char *str_concat(char *,char *);
