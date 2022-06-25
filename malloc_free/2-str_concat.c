@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 	if (s + t == 0)
 	{
 		dest = malloc(1);
-		if(dest != NULL)
+		if (dest != NULL)
 			dest[0] = '\0';
 	}
 	else
