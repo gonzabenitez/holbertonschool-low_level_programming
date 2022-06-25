@@ -12,8 +12,9 @@ char *_strdup(char *str)
 	int i, s;
 	char *dest;
 
+	s = 0;
 	s = _strlen(str);
-
+	
 	if (s == 0)
 		dest = NULL;
 	else
