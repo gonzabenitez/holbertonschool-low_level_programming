@@ -11,7 +11,7 @@
 int **alloc_grid(int w, int h)
 {
 	int i, s;
-	int **dest;
+	int **dest = NULL;
 
 	if (w <= 0 || h <= 0)
 		dest = NULL;
