@@ -2,17 +2,5 @@
 # define MAIN_H
 int _putchar(char);
 int _strlen(char *, int);
-void _vstrlen(char *, int);
-void _pstrlen(char *, int*);
-void _put_n(char *, int);
-void _facpn(int *, int*);
-void _tfacpn(int *, int *, int *);
-void _sqrtr(int *, int);
-void prime_minister(int *, int);
-void _puts_recursion(char *);
-void _print_rev_recursion(char *);
-int _strlen_recursion(char *);
-int factorial(int);
-int _pow_recursion(int, int);
-int is_prime_number(int);
+char *create_array(int, char);
 # endif

@@ -1,5 +1,5 @@
 # include "main.h"
-
+# include <stdlib.h>
 /**
  * create_array - Something useful :)
  *@s: string to be measured
