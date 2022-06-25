@@ -11,21 +11,28 @@
 int **alloc_grid(int w, int h)
 {
 	int i, s;
-	int **dest = NULL;
+	int **dest;
 
 	if (w <= 0 || h <= 0)
 		dest = NULL;
 	else
 	{
-		*dest = (int *) malloc(sizeof(int) * w * h);
+		dest = malloc(sizeof(int *) * h);
 		if (dest != NULL)
 		{
 			for (i = 0; i < h; i++)
 			{	
+				dest[i] = malloc(sizeof(int) * w);
 				if (dest[i] != NULL)
 				{
 					for (s = 0; s < w; s++)
 						dest[i][s] = 0;
+				}
+				else
+				{
+					for (t = i; t >= 0; t--)
+						free(dest[t]);
+					break;
 				}
 
 			}
