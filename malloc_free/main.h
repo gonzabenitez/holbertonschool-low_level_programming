@@ -3,4 +3,5 @@
 int _putchar(char);
 int _strlen(char *, int);
 char *create_array(unsigned int, char);
+char *_strdup(char *str);
 # endif
