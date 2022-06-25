@@ -17,18 +17,20 @@ int **alloc_grid(int w, int h)
 		dest = NULL;
 	else
 	{
-		dest = malloc(sizeof(int *) * h);
+		*dest = (int *) malloc(sizeof(int) * w * h);
 		if (dest != NULL)
 		{
 			for (i = 0; i < h; i++)
 			{	
-				dest[i] = malloc(sizeof(int) * w);
-				for (s = 0; s < w; s++)
-					dest[i][s] = 0;
+				if (dest[i] != NULL)
+				{
+					for (s = 0; s < w; s++)
+						dest[i][s] = 0;
+				}
+
 			}
 		}
 	}
-
 	return (dest);
 
 }
