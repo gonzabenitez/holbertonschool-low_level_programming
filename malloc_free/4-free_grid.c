@@ -14,8 +14,8 @@ void free_grid(int **grid, int h)
 	if (grid != NULL && h > 0)
 	{
 		for (i = 0; i < h; i++)
-			free(dest[i]);
-		free(dest);
+			free(grid[i]);
+		free(grid);
 	}
 
 }
