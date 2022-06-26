@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 					dest[i] = s2[i - s];
 			}
 		}
-		dest[r - 1] = '\0';
+		dest[r - 2] = '\0';
 	}
 
 	return (dest);
