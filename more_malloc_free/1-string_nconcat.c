@@ -24,19 +24,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		t = _ustrlen(s2);
 	else
 		t = 0;
-
-	if (s + t == 0)
-	{
-		dest = malloc(1);
-		if (dest != NULL)
-			dest[0] = '\0';
-	}
-	else
-	{
-		if (n >= t)
-			n = t;
-	}
-	
+	if (n >= t)
+		n = t;
 	r = s + n + 1;
 	dest = malloc(r);
 
