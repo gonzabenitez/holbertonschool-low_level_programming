@@ -45,15 +45,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		for (i = 0; i < r; i++)
 		{
 			if (i < s)
-			{
 				dest[i] = s1[i];
-			}
 			else
 			{
-				dest[i] = s2[i - s];
+				if (r > 1)
+					dest[i] = s2[i - s];
 			}
 		}
-		dest[n + s] = '\0';
+		dest[r - 1] = '\0';
 	}
 
 	return (dest);
