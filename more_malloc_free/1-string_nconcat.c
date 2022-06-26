@@ -14,7 +14,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, s, t, r;
 	char *dest;
-	
+
 	if (s1 != NULL)
 		s = _ustrlen(s1);
 	else
@@ -49,7 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 }
 
 /**
- * _strlen - returns len of  string
+ * _ustrlen - returns len of  string
  * @s: string to be measured
  * Return: length of string
 */
