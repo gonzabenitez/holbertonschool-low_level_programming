@@ -9,7 +9,7 @@
 
 void *_calloc(unsigned int n, unsigned int s)
 {
-	void *fg = NULL;
+	char *fg = NULL;
 	unsigned int i;
 
 	if (n != 0 && s != 0)
