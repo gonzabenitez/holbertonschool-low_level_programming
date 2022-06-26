@@ -44,11 +44,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		for (i = 0; i < r; i++)
 		{
-			if (i < s)
+			if (i < s && s > 0)
 				dest[i] = s1[i];
 			else
 			{
-				if (r > 1)
+				if (n > 0)
 					dest[i] = s2[i - s];
 			}
 		}
