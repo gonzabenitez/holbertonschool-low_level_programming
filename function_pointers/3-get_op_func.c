@@ -30,5 +30,5 @@ int (*get_op_func(char *s))(int a, int b)
 			break;
 		i++;
 	}
-	return (ops->f);
+	return (ops->f(a,b));
 }
