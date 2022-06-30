@@ -12,12 +12,12 @@
 int main(int argc,char *argv[])
 {
 	int op_a, op_b, r, res = 0;
-	char op;
+	char *op;
 
 	if (argc < 4 && argv != NULL)
 	{
 		op_a = atoi(argv[1]);
-		op = *argv[2];
+		op = argv[2];
 		op_b = atoi(argv[3]);
 		r = (*get_op_func(op))(op_a, op_b);
 		printf("%d",r);
