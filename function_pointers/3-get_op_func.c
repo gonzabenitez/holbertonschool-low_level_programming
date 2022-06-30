@@ -10,7 +10,7 @@
  * Return: Always 0 (Succeess)
 */
 
-int *(get_op_func(char *s))(int a, int b)
+int (*get_op_func(char *s))(int a, int b)
 {
 	op_t ops[] = {
 		{"+", op_add},
