@@ -1,12 +1,12 @@
 #ifndef DOG
 #define DOG
 /**
- * dog - Some kind of function
+ * struct dog - Some kind of function
  * @name: name
  * @age: age
  * @owner: owner
 */
-struct dog 
+struct dog
 {
 	char *name;
 	float age;
