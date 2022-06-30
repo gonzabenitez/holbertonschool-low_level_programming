@@ -3,10 +3,10 @@
 # include <stdlib.h>
 # include <stddef.h>
 /**
- * array_iterator - Something useful :)
+ * int_index - Something useful :)
  *@arr: dog
  *@s: function
- *@action: something
+ *@cmp: something
  * Return: Always 0 (Succeess)
 */
 
