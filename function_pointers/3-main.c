@@ -22,7 +22,23 @@ int main(int argc,char *argv[])
 		r = (*get_op_func(op))(op_a, op_b);
 		printf("%d\n",r);
 	}
-	else 
-		res = -1;
+	else
+	{
+		res = 98;
+		printf("Error\n");
+	}
+	
+	if (argv[2] != "+" && argv[2] != "-" && argv[2] != "/" && argv[2] != "*" && argv[2] != "%")
+	{
+		printf("Error\n");
+		res = 99;
+	}
+	else if ((argv[2] == '%' || argv[2]) && atoi(argv[3]) == 0)
+	{
+		printf("Error\n");
+		res = 100;
+	}
+	else if (argv[2] != '+' || argv[2] != '
+
 	return (res);
 }
