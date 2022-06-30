@@ -1,4 +1,5 @@
 #ifndef fpoint
 #define fpoint
 void print_name(char *, void(*f)(char *));
+void array_iterator(int *arr, size_t s, void (*action)(int))
 #endif
