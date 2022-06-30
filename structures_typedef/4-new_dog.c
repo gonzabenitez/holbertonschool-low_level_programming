@@ -17,7 +17,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		zeus->name = _strdup(name);
 		zeus->age = age;
 		zeus->owner = _strdup(owner);
+		if (zeus->name == NULL || zeus->owner == NULL)
+		{
+			free(zeus->name);
+			free(zeus->owner);
+		}
 	}
+	else
+		free(zeus);
 	return (zeus);
 }
 
