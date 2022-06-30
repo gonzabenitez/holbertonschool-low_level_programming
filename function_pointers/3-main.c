@@ -14,7 +14,7 @@ int main(int argc,char *argv[])
 	int op_a, op_b, r, res = 0;
 	char *op;
 
-	if (argc < 4 && argv != NULL)
+	if (argc == 4 && argv != NULL)
 	{
 		op_a = atoi(argv[1]);
 		op = argv[2];
