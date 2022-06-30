@@ -38,7 +38,6 @@ int main(int argc,char *argv[])
 		printf("Error\n");
 		res = 100;
 	}
-	else if (argv[2] != '+' || argv[2] != '
 
 	return (res);
 }
