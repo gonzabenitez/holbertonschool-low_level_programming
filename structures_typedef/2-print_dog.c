@@ -8,8 +8,17 @@
 
 void print_dog(struct dog *d)
 {
-	if (d == 0)
-		return;
+	char *n, *o;
+	char nil[] = "(nil)";
+
+	if ((*d).name != NULL)
+		n = &(*d).name;
 	else
-		printf("Name: %s\nAge: %f\nOwner: %s\n", (*d).name, (*d).age, (*d).owner);
+		n = &nil;
+	if ((*d).owner != NULL)
+		o = &(*d).owner;
+	else
+		o = &nil; 
+	if (d != 0)
+		printf("Name: %s\nAge: %f\nOwner: %s\n", n, (*d).age, o);
 }
