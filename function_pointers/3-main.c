@@ -13,7 +13,19 @@ int main(int argc,char *argv[])
 {
 	int op_a, op_b, r, res = 0;
 	char *op;
-
+	
+	if (*argv[2] != '+' && *argv[2] != '-' && *argv[2] != '/' && *argv[2] != '*' && *argv[2] != '%')
+	{
+		printf("Error\n");
+		res = 99;
+	}
+	else if ((*argv[2] == '%' || *argv[2] == '/') && atoi(argv[3]) == 0)
+	{
+		printf("Error\n");
+		res = 100;
+	}
+	
+		
 	if (argc == 4 && argv != NULL)
 	{
 		op_a = atoi(argv[1]);
@@ -28,16 +40,6 @@ int main(int argc,char *argv[])
 		printf("Error\n");
 	}
 	
-	if (*argv[2] != '+' && *argv[2] != '-' && *argv[2] != '/' && *argv[2] != '*' && *argv[2] != '%')
-	{
-		printf("Error\n");
-		res = 99;
-	}
-	else if ((*argv[2] == '%' || *argv[2] == '/') && atoi(argv[3]) == 0)
-	{
-		printf("Error\n");
-		res = 100;
-	}
 
 	return (res);
 }
