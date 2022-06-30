@@ -20,7 +20,7 @@ int main(int argc,char *argv[])
 		op = *argv[2];
 		op_b = atoi(argv[3]);
 
-		printf("%d",*(get_op_func(op))(op_a,op_b));
+		printf("%d",(get_op_func(op))(op_a,op_b));
 	}
 	else 
 		res = -1;
