@@ -11,7 +11,7 @@
 
 int main(int argc,char *argv[])
 {
-	int op_a, op_b, res = 0;
+	int op_a, op_b, r, res = 0;
 	char op;
 
 	if (argc < 4 && argv != NULL)
@@ -19,8 +19,8 @@ int main(int argc,char *argv[])
 		op_a = atoi(argv[1]);
 		op = *argv[2];
 		op_b = atoi(argv[3]);
-
-		printf("%d",(get_op_func(op))(op_a,op_b));
+		r = *(get_op_func(op)(op_a, op_b);
+		printf("%d",r);
 	}
 	else 
 		res = -1;
