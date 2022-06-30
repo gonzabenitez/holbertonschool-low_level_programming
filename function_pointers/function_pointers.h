@@ -5,4 +5,5 @@
 # include <stddef.h>
 void print_name(char *, void(*f)(char *));
 void array_iterator(int *arr, size_t s, void (*action)(int));
+int int_index(int *, int, int (*cmp)(int));
 #endif
