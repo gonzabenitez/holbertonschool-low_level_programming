@@ -17,4 +17,5 @@ void init_dog(struct dog *, char *, float, char *);
 void print_dog(struct dog *);
 char *_strdup(char *);
 int _strlen(char *);
+dog_t new_dog(char *, float, char *);
 #endif
