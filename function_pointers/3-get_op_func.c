@@ -26,9 +26,9 @@ int (*get_op_func(char *s))(int a, int b)
 
 	while (i < 6)
 	{
-		if (s == ops->op[i])
+		if (s == *ops->op[i])
 			break;
 		i++;
 	}
-	return (ops->f[i]);
+	return (*ops->f[i]);
 }
