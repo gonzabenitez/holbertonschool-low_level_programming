@@ -8,8 +8,8 @@
 
 void print_dog(struct dog *d)
 {
-	char *n, *o;
-	char nil = "(nil)";
+	char **n, **o;
+	char *nil = "(nil)";
 
 	if ((*d).name != NULL)
 		n = &(*d).name;
