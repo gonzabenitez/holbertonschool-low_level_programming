@@ -3,7 +3,9 @@
 # include <stdlib.h>
 /**
  * new_dog - Something useful :)
- *@d: pointer to an in
+ *@name: name
+ *@age: age
+ *@owner: owner
  * Return: Always 0 (Succeess)
 */
 
