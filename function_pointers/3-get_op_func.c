@@ -7,8 +7,6 @@
 /**
  * get_op_func - Something useful :)
  *@s: dog
- *@a: function
- *@b: param b
  * Return: Always 0 (Succeess)
 */
 
@@ -20,13 +18,13 @@ int (*get_op_func(char *s))(int a, int b)
 		{"*", op_mul},
 		{"/", op_div},
 		{"%", op_mod},
-		{NULL,NULL}
+		{NULL, NULL}
 	};
 	int i = 0;
 
 	while (i < 6)
 	{
-		if (*s == *(ops[i].op))
+		if (*s == * (ops[i].op))
 			break;
 		i++;
 	}
