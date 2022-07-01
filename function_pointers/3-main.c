@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int op_a, op_b, r, res = 0;
+	int op_a, op_b, r, f, res = 0;
 	char *op;
 	char a;
 
@@ -19,13 +19,14 @@ int main(int argc, char *argv[])
 	if (argc == 4 && argv != NULL)
 	{
 		a = *argv[2];
+		f = strlen(*argv[2])
 
-		if (a != '+' && a != '-' && a != '/' && a != '*' && a != '%')
+		if ((a != '+' && a != '-' && a != '/' && a != '*' && a != '%') || f > 1)
 		{
 			printf("Error\n");
 			res = 99;
 		}
-		else if ((*argv[2] == '%' || *argv[2] == '/') && *argv[3] == '0')
+		else if ((a == '%' || a == '/') && *argv[3] == '0')
 		{
 			printf("Error\n");
 			res = 100;
