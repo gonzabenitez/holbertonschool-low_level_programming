@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	if (argc == 4 && argv != NULL)
 	{
 		a = *argv[2];
-		f = strlen(argv[2])
+		f = strlen(argv[2]);
 
 		if ((a != '+' && a != '-' && a != '/' && a != '*' && a != '%') || f > 1)
 		{
