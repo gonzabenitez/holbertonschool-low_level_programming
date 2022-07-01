@@ -9,24 +9,28 @@
  * Return: Always 0 (Succeess)
 */
 
-int main(int argc,char *argv[])
+int main(int argc, char *argv[])
 {
 	int op_a, op_b, r, res = 0;
 	char *op;
+	char a;
+
 	
-	if (*argv[2] != '+' && *argv[2] != '-' && *argv[2] != '/' && *argv[2] != '*' && *argv[2] != '%')
+	if (argc == 4 && argv != NULL)
 	{
-		printf("Error\n");
-		res = 99;
-	}
-	else if ((*argv[2] == '%' || *argv[2] == '/') && atoi(argv[3]) == 0)
-	{
-		printf("Error\n");
-		res = 100;
-	}
-	else
-	{	
-		if (argc == 4 && argv != NULL)
+		a = *argv[2];
+
+		if (a != '+' && a != '-' && a != '/' && a != '*' && a != '%')
+		{
+			printf("Error\n");
+			res = 99;
+		}
+		else if ((*argv[2] == '%' || *argv[2] == '/') && *argv[3] == '0')
+		{
+			printf("Error\n");
+			res = 100;
+		}
+		else
 		{
 			op_a = atoi(argv[1]);
 			op = argv[2];
@@ -34,11 +38,11 @@ int main(int argc,char *argv[])
 			r = (*get_op_func(op))(op_a, op_b);
 			printf("%d\n",r);
 		}
-		else
-		{
-			res = 98;
-			printf("Error\n");
-		}
+	}
+	else
+	{
+	res = 98;
+	printf("Error\n");
 	}
 
 	return (res);
