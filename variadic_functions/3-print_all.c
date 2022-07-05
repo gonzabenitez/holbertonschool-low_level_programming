@@ -33,8 +33,7 @@ void print_all(const char * const format, ...)
 					printf("%s", arg);
 						break;
 			}
-			if (i + 1 < n)
-				printf(", ");
+			printf(", ");
 		}
 		va_end(ap);
 	}
