@@ -14,8 +14,10 @@ void print_all(const char * const format, ...)
 	unsigned int i = 0;
 
 	while (format == 0)
+	{
+		printf("\n");
 		return;
-
+	}
 	va_start(ap, format);
 
 	while (format[i] != 0)
