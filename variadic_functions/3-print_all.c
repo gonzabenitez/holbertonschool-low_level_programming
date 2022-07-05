@@ -11,7 +11,6 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	char *arg;
 	char *nil = "(nil)";
-	unsigned int n;
 
 	if (format != 0)
 	{
