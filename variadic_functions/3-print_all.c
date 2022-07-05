@@ -9,22 +9,25 @@
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	unsigned int i;
 	char *arg;
 	char *nil = "(nil)";
+	unsigned int n;
 
 	if (format != 0)
 	{
+		while (format != 0)
+			n++;
+
 		va_start(ap, n);
 
 		while (format != 0)
 		{
 			switch (format[0]){
-				case 'c' : printf("%c", va_arg(ap, char));
+				case 'c' : printf("%c", va_arg(ap, int));
 						break;
 				case 'i' : printf("%d", va_arg(ap, int));
 						break;
-				case 'f' : printf("%f", va_arg(ap, float));
+				case 'f' : printf("%f", va_arg(ap, double));
 						break;
 				case 's' : 
 					arg = va_arg(ap, char *);
