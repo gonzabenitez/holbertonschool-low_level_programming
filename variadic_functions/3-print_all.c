@@ -13,6 +13,8 @@ void print_all(const char * const format, ...)
 	char *nil = "(nil)";
 	unsigned int i = 0;
 
+	while (format == 0)
+		return;
 
 	va_start(ap, format);
 
@@ -20,17 +22,20 @@ void print_all(const char * const format, ...)
 	{
 		switch (format[i])
 		{
-		case 'c' : printf("%c", va_arg(ap, int));
-						break;
-		case 'i' : printf("%d", va_arg(ap, int));
-						break;
-		case 'f' : printf("%f", va_arg(ap, double));
-						break;
-		case 's' : 
-		arg = va_arg(ap, char *);
-		if (arg == 0)
-			arg = nil;
-		printf("%s", arg);
+		case 'c':
+			printf("%c", va_arg(ap, int));
+			break;
+		case 'i':
+			printf("%d", va_arg(ap, int));
+			break;
+		case 'f':
+			printf("%f", va_arg(ap, double));
+			break;
+		case 's':
+			arg = va_arg(ap, char *);
+			if (arg == 0)
+				arg = nil;
+			printf("%s", arg);
 			break;
 		default:
 			i++;
