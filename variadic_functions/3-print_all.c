@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 	char *arg;
 	char *nil = "(nil)";
 
-	if (n > 0)
+	if (format != 0)
 	{
 		va_start(ap, n);
 
